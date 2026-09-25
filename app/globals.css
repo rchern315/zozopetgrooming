@@ -839,3 +839,120 @@ h2{font-size:clamp(1.75rem,3vw,2.7rem)}
     min-height:170px;
   }
 }
+
+
+/* Meet-the-groomer section: approved mockup */
+.groomer-showcase{
+  display:grid;
+  grid-template-columns:31% 42% 17% 10%;
+  gap:1rem;
+  align-items:center;
+  padding-top:12px;
+  padding-bottom:12px;
+  position:relative;
+  overflow:hidden;
+}
+.groomer-photo-primary{position:relative}
+.groomer-photo-primary img{
+  width:100%;
+  height:258px;
+  object-fit:cover;
+  object-position:center 42%;
+}
+.photo-spark{
+  left:12px;
+  bottom:12px;
+  color:#fff;
+  font-size:1.1rem;
+}
+.groomer-copy h2{
+  font-size:clamp(2rem,3.2vw,3rem);
+  margin-bottom:.45rem;
+}
+.groomer-copy>p:not(.eyebrow){
+  font-size:.68rem;
+  line-height:1.34;
+  color:#f1f2f0;
+  margin-bottom:.5rem;
+}
+.groomer-values{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:.7rem;
+  margin-top:.8rem;
+}
+.groomer-values span{
+  display:flex;
+  align-items:center;
+  gap:.4rem;
+  min-width:0;
+}
+.groomer-values b{
+  color:var(--green);
+  font-size:1.6rem;
+  line-height:1;
+  font-weight:400;
+}
+.groomer-values small{
+  color:#f5f5f2;
+  font-size:.58rem;
+  line-height:1.14;
+}
+.groomer-secondary{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.groomer-coffin{
+  width:136px;
+  padding:3px;
+  background:#fff;
+}
+.groomer-coffin img{
+  height:220px;
+  width:100%;
+  object-fit:cover;
+  object-position:center;
+  filter:grayscale(1) contrast(1.06);
+}
+.groomer-note-wrap{
+  position:relative;
+  display:flex;
+  min-height:220px;
+  align-items:center;
+  justify-content:center;
+}
+.groomer-note{
+  margin:0;
+  font-size:.72rem;
+  line-height:1.18;
+  text-align:center;
+  transform:rotate(-5deg);
+  color:#fff;
+}
+.note-star{
+  left:0;
+  top:18px;
+  font-size:.95rem;
+  color:#fff;
+}
+
+@media(max-width:1000px){
+  .groomer-showcase{
+    grid-template-columns:36% 1fr 160px;
+  }
+  .groomer-note-wrap{
+    grid-column:1/-1;
+    min-height:auto;
+    padding-top:.25rem;
+  }
+  .groomer-note br{display:none}
+  .groomer-note{font-size:.72rem}
+}
+@media(max-width:720px){
+  .groomer-showcase{grid-template-columns:1fr}
+  .groomer-photo-primary img{height:330px}
+  .groomer-secondary{justify-content:flex-start}
+  .groomer-note-wrap{grid-column:auto}
+  .groomer-values{grid-template-columns:1fr 1fr 1fr}
+}
