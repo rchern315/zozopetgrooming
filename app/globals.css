@@ -395,3 +395,48 @@ h2{margin:0;font:900 31px/.95 "Playfair Display",Georgia,serif;letter-spacing:-1
   .footer small{font-size:.66vw}
   .footer-slogan{font-size:.94vw!important}
 }
+
+
+/* Exact approved desktop mockup */
+.mockup-home{width:100%;min-height:100vh;background:#000}
+.desktop-mockup-shell{
+  position:relative;
+  width:100%;
+  max-width:none;
+  margin:0 auto;
+  background:#000;
+}
+.desktop-mockup-image{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.mock-hotspot{
+  position:absolute;
+  display:block;
+  z-index:20;
+  background:transparent;
+  border:0;
+}
+.hs-home{left:36.3%;top:1.1%;width:4.1%;height:2.2%}
+.hs-services{left:41.7%;top:1.1%;width:4.8%;height:2.2%}
+.hs-gallery-nav{left:48.8%;top:1.1%;width:4.3%;height:2.2%}
+.hs-about{left:55.5%;top:1.1%;width:4.3%;height:2.2%}
+.hs-reviews{left:61.6%;top:1.1%;width:5.1%;height:2.2%}
+.hs-contact{left:68.2%;top:1.1%;width:5.1%;height:2.2%}
+.hs-call-top{left:80.0%;top:.7%;width:14.5%;height:2.6%}
+.hs-call-hero{left:5.4%;top:22.1%;width:17.2%;height:2.8%}
+.hs-view-services{left:24.8%;top:22.1%;width:15.2%;height:2.8%}
+.hs-full-gallery{left:79.2%;top:62.0%;width:14.6%;height:2.5%}
+.hs-instagram{left:38.0%;top:85.2%;width:26%;height:4.0%}
+.hs-phone-footer{left:31.7%;top:92.2%;width:14.2%;height:4.4%}
+.hs-instagram-footer{left:47.0%;top:92.2%;width:14.3%;height:4.4%}
+.hs-facebook-footer{left:62.4%;top:92.2%;width:12.2%;height:4.4%}
+.mock-hotspot:focus-visible{outline:3px solid #59ff68;outline-offset:2px}
+.mobile-built-site{display:none}
+
+@media(max-width:767px){
+  .desktop-mockup-shell{display:none}
+  .mobile-built-site{display:block}
+  .mobile-built-site .home-page{width:100%;max-width:none}
+}
