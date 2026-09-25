@@ -15,8 +15,9 @@ export default function GiftCardsPage() {
           <span>🦴</span><h2>ZOZO’S</h2><strong>PET GROOMING</strong><p>GOOD PUPS<br/>LOOK BETTER HERE.</p><small>Gift Card</small>
         </div>
         <div className="gift-card-copy">
-          <p className="eyebrow">Digital + printable</p><h2>Send a Little Pup Pampering</h2>
-          <p>Square can handle the actual gift-card purchase and redemption. We’ll connect this button to Zoë’s Square gift-card checkout once the live link is provided.</p>
+          <p className="eyebrow">Gift cards</p>
+          <h2>Pup Pampering Makes a Great Gift</h2>
+          <p>Online gift-card purchasing will be added once the client’s checkout details are ready. For now, call Zozo’s to ask about gift-card availability.</p>
           <div className="gift-values"><span>$25</span><span>$50</span><span>$75</span><span>$100</span><span>Custom</span></div>
           <a className="button button-primary" href="tel:+17754692228">Call About Gift Cards</a>
         </div>
