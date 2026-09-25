@@ -440,3 +440,8 @@ h2{margin:0;font:900 31px/.95 "Playfair Display",Georgia,serif;letter-spacing:-1
   .mobile-built-site{display:block}
   .mobile-built-site .home-page{width:100%;max-width:none}
 }
+
+
+/* Remove screenshot-as-page workaround */
+.desktop-mockup-shell{display:none!important}
+.mobile-built-site{display:contents!important}
