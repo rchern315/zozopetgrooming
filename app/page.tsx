@@ -43,7 +43,7 @@ export default function Home() {
         </a>
       </header>
 
-      <section className="hero" id="top">
+      <section className="hero mockup-hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Professional pet grooming with personality</p>
           <h1>Fresh Cuts.<br />Clean Pups.<br /><span>Killer Style.</span></h1>
@@ -65,7 +65,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section services-preview" aria-labelledby="services-heading">
+      <div className="wave-divider" aria-hidden="true" />
+      <section className="section services-preview compact-section" aria-labelledby="services-heading">
         <div className="section-heading split-heading">
           <div>
             <p className="eyebrow">— Our Services —</p>
@@ -85,7 +86,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section about" id="about" aria-labelledby="about-heading">
+      <section className="section about compact-section" id="about" aria-labelledby="about-heading">
         <div className="about-photo tilted-frame">
           <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=900&q=85" alt="Zoë Toranzo with her dog" />
         </div>
@@ -106,7 +107,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section gallery-preview" aria-labelledby="gallery-heading">
+      <section className="section gallery-preview compact-section" aria-labelledby="gallery-heading">
         <div className="section-heading gallery-title-row">
           <div>
             <p className="eyebrow">— Gallery Highlights —</p>
@@ -122,7 +123,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section reviews-preview" aria-labelledby="reviews-heading">
+      <section className="section reviews-preview compact-section" aria-labelledby="reviews-heading">
         <div className="section-heading reviews-title-row">
           <div>
             <p className="eyebrow">— What Pet Parents Are Saying —</p>
