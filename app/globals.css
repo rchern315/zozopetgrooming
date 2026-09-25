@@ -445,3 +445,28 @@ h2{margin:0;font:900 31px/.95 "Playfair Display",Georgia,serif;letter-spacing:-1
 /* Remove screenshot-as-page workaround */
 .desktop-mockup-shell{display:none!important}
 .mobile-built-site{display:contents!important}
+
+
+/* Approved image assets */
+.brand-logo{
+  display:block;
+  width:178px;
+  height:auto;
+  object-fit:contain;
+}
+.footer-logo{
+  width:180px;
+}
+.hero-dog{
+  image-rendering:auto;
+}
+.groomer-photo-primary img,
+.groomer-coffin img,
+.gallery-card img,
+.social-photos img{
+  image-rendering:auto;
+}
+@media(max-width:600px){
+  .brand-logo{width:145px}
+  .footer-logo{width:165px}
+}
