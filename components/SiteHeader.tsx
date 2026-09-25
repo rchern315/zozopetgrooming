@@ -11,8 +11,7 @@ export default function SiteHeader({ active = "" }: { active?: string }) {
   return (
     <header className="site-header">
       <a className="brand brand-lockup" href="/" aria-label="Zozo's Pet Grooming home">
-        <span className="brand-badge" aria-hidden="true"><i className="fa-solid fa-dog" /></span>
-        <span className="brand-copy"><strong>ZOZO’S</strong><small>PET GROOMING</small></span>
+        <img className="brand-logo" src="/logo.png" alt="Zozo’s Pet Grooming" />
         <span className="brand-moon" aria-hidden="true">☾</span>
       </a>
       <nav aria-label="Primary navigation">
