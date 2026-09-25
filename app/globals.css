@@ -143,3 +143,134 @@ nav a:hover::after, nav a.active::after { left:0; right:0; }
   .footer .brand { justify-content:center; }
   .footer .scribble { text-align:center; }
 }
+
+/* Approved homepage mockup alignment */
+main { overflow: hidden; }
+.mockup-hero {
+  min-height: 520px;
+  grid-template-columns: 40% 60%;
+}
+.mockup-hero .hero-copy {
+  padding: 3.75rem 2.5rem 3.25rem 0;
+}
+.mockup-hero h1 {
+  font-size: clamp(3rem, 5vw, 5.35rem);
+  line-height: .92;
+  margin-bottom: .9rem;
+}
+.mockup-hero .hero-text {
+  font-size: .96rem;
+  line-height: 1.45;
+  max-width: 500px;
+}
+.mockup-hero .hero-visual {
+  min-height: 520px;
+}
+.mockup-hero .coffin-card {
+  width: 145px;
+  min-height: 235px;
+  right: 10%;
+  top: 11%;
+}
+.mockup-hero .hero-visual > .scribble {
+  right: 2.2%;
+  top: 45%;
+  font-size: 1.02rem;
+}
+.wave-divider {
+  height: 28px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 3;
+  background:
+    radial-gradient(52px 18px at 52px 0, transparent 49px, var(--bg) 50px) 0 0/104px 28px repeat-x;
+}
+.compact-section {
+  padding-top: 2.1rem;
+  padding-bottom: 2.1rem;
+}
+.compact-section .section-heading {
+  margin-bottom: 1.15rem;
+}
+.compact-section h2 {
+  font-size: clamp(1.9rem, 3vw, 3.05rem);
+  margin-bottom: .45rem;
+}
+.services-preview .split-heading {
+  grid-template-columns: 1.55fr .9fr;
+  gap: 2.25rem;
+}
+.services-preview .split-heading > p {
+  font-size: .84rem;
+  line-height: 1.35;
+}
+.service-grid {
+  gap: .65rem;
+}
+.service-card {
+  min-height: 190px;
+  padding: 1.25rem .95rem 1rem;
+  border-radius: 14px;
+}
+.service-card i { font-size: 1.8rem; margin-bottom: .7rem; }
+.service-card h3 { font-size: .88rem; margin-bottom: .45rem; }
+.service-card p { font-size: .77rem; line-height: 1.35; }
+.about {
+  grid-template-columns: 31% 43% 26%;
+  gap: 1.4rem;
+}
+.tilted-frame img { height: 290px; }
+.about-copy h2 { font-size: clamp(2rem, 3vw, 3.2rem); }
+.about-copy p { font-size: .84rem; line-height: 1.38; margin-bottom: .65rem; }
+.about-points { gap: .8rem; margin-top: .8rem; font-size: .76rem; }
+.coffin-photo { max-width: 170px; }
+.coffin-photo img { height: 235px; }
+.side-note { font-size: .88rem; }
+.gallery-title-row {
+  grid-template-columns: 1.2fr 1fr auto;
+  gap: 1.4rem;
+}
+.gallery-title-row > p { font-size: .78rem; line-height: 1.35; }
+.gallery-row { gap: .45rem; }
+.gallery-card { border-radius: 10px; }
+.reviews-title-row { align-items: center; }
+.rating { font-size: .66rem; }
+.rating span { font-size: 1.15rem; }
+.review-grid { gap: .75rem; }
+.review-card { padding: 1rem 1.1rem; border-radius: 12px; font-size: .78rem; }
+.review-card p { line-height: 1.35; margin-bottom: .7rem; }
+.social-strip { min-height: 118px; }
+.social-photos img { height: 118px; }
+.social-center { padding: .7rem 1rem; }
+.social-center p { font-size: .58rem; }
+.social-center a { font-size: 1.55rem; }
+.social-center small { font-size: .52rem; }
+.footer {
+  padding-top: 1.15rem;
+  padding-bottom: 1.45rem;
+  gap: .8rem;
+  font-size: .78rem;
+}
+.footer .brand strong { font-size: 1.55rem; }
+
+@media (min-width: 1450px) {
+  .site-header, .hero, .section, .footer {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body { background: #000; }
+}
+
+@media (max-width: 1050px) {
+  .mockup-hero { min-height: auto; }
+  .mockup-hero .hero-visual { min-height: 430px; }
+  .compact-section { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+}
+
+@media (max-width: 680px) {
+  .mockup-hero .hero-copy { padding: 3rem 1rem 2rem; }
+  .mockup-hero h1 { font-size: clamp(2.8rem, 15vw, 4.5rem); }
+  .mockup-hero .hero-visual { min-height: 390px; }
+  .wave-divider { display: none; }
+}
