@@ -39,9 +39,9 @@ export default function Home() {
           <a className="active" href="#top">Home</a>
           <a href="/services">Services</a>
           <a href="/gallery">Gallery</a>
-          <a href="#about">About</a>
+          <a href="/about">About</a>
           <a href="/reviews">Reviews</a>
-          <a href="#contact">Contact</a>
+          <a href="/contact">Contact</a>
         </nav>
         <a className="button button-primary header-cta" href="tel:+17754692228">
           <i className="fa-solid fa-phone" aria-hidden="true" /> Call to Book
