@@ -16,6 +16,24 @@ export default function ContactPage() {
         <article className="contact-card"><i className="fa-brands fa-instagram" aria-hidden="true"/><h3>Instagram</h3><a target="_blank" rel="noreferrer" href="https://www.instagram.com/zozo_loki/">@zozo_loki</a><p>Recent grooms and behind-the-scenes pups.</p></article>
         <article className="contact-card"><i className="fa-brands fa-facebook" aria-hidden="true"/><h3>Facebook</h3><a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=61551451768672">Zozo’s Pet Grooming</a><p>Follow updates and message the business.</p></article>
       </section>
+
+      <section className="section team-socials">
+        <div className="section-heading">
+          <p className="eyebrow bone-label">🦴 &nbsp; Groomer Instagrams &nbsp; 🦴</p>
+          <h2>Follow the Team</h2>
+        </div>
+        <div className="team-social-grid">
+          <a className="team-social-card" target="_blank" rel="noreferrer" href="https://www.instagram.com/zozo_loki/">
+            <i className="fa-brands fa-instagram" aria-hidden="true" />
+            <span><strong>Zoë / Zozo’s</strong><small>@zozo_loki</small></span>
+          </a>
+          <a className="team-social-card" target="_blank" rel="noreferrer" href="https://www.instagram.com/rachellehopkins1/">
+            <i className="fa-brands fa-instagram" aria-hidden="true" />
+            <span><strong>Rachelle Hopkins</strong><small>@rachellehopkins1</small></span>
+          </a>
+        </div>
+      </section>
+
       <section className="section booking-placeholder">
         <p className="eyebrow">Square appointments</p><h2>Online Booking</h2>
         <p>Add Zoë’s Square booking URL here and the green button will take clients directly to available appointments.</p>
