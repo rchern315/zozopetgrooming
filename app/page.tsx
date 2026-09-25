@@ -27,7 +27,26 @@ const reviewPlaceholders = [
 
 export default function Home() {
   return (
-    <main className="home-page">
+    <main className="mockup-home">
+      <div className="desktop-mockup-shell">
+        <img className="desktop-mockup-image" src="/zozo-mockup.jpg" alt="Zozo's Pet Grooming homepage" />
+        <a className="mock-hotspot hs-home" href="/" aria-label="Home" />
+        <a className="mock-hotspot hs-services" href="/services" aria-label="Services" />
+        <a className="mock-hotspot hs-gallery-nav" href="/gallery" aria-label="Gallery" />
+        <a className="mock-hotspot hs-about" href="/about" aria-label="About" />
+        <a className="mock-hotspot hs-reviews" href="/reviews" aria-label="Reviews" />
+        <a className="mock-hotspot hs-contact" href="/contact" aria-label="Contact" />
+        <a className="mock-hotspot hs-call-top" href="tel:+17754692228" aria-label="Call to book" />
+        <a className="mock-hotspot hs-call-hero" href="tel:+17754692228" aria-label="Call to book" />
+        <a className="mock-hotspot hs-view-services" href="/services" aria-label="View services" />
+        <a className="mock-hotspot hs-full-gallery" href="/gallery" aria-label="View full gallery" />
+        <a className="mock-hotspot hs-instagram" href="https://www.instagram.com/zozo_loki/" target="_blank" rel="noreferrer" aria-label="Zozo's Instagram" />
+        <a className="mock-hotspot hs-phone-footer" href="tel:+17754692228" aria-label="Call Zozo's" />
+        <a className="mock-hotspot hs-instagram-footer" href="https://www.instagram.com/zozo_loki/" target="_blank" rel="noreferrer" aria-label="Zozo's Instagram" />
+        <a className="mock-hotspot hs-facebook-footer" href="https://www.facebook.com/profile.php?id=61551451768672" target="_blank" rel="noreferrer" aria-label="Zozo's Facebook" />
+      </div>
+      <div className="mobile-built-site">
+        <div className="home-page">
       <SiteHeader active="home" />
 
       <section className="hero" id="top">
@@ -169,6 +188,6 @@ export default function Home() {
       </section>
 
       <SiteFooter />
-    </main>
+    </div></div></main>
   );
 }
