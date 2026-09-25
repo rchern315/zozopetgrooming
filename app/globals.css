@@ -569,3 +569,19 @@ h2{
   .gift-card-art{min-height:330px}.gift-card-art h2{font-size:2.7rem}
   .package-modal ul{columns:1}
 }
+
+
+.team-socials{padding-top:18px;padding-bottom:24px}
+.team-social-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.team-social-card{
+  display:flex;align-items:center;gap:12px;
+  border:1px solid #394239;border-radius:14px;
+  padding:14px 16px;background:#0a0d0b;
+  transition:.2s ease
+}
+.team-social-card:hover{border-color:var(--green);transform:translateY(-2px)}
+.team-social-card i{font-size:1.6rem;color:var(--green)}
+.team-social-card span{display:flex;flex-direction:column}
+.team-social-card strong{font-family:"Playfair Display",Georgia,serif;font-size:1rem}
+.team-social-card small{color:var(--green);font-size:.68rem;margin-top:.15rem}
+@media(max-width:680px){.team-social-grid{grid-template-columns:1fr}}
