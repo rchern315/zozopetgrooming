@@ -101,7 +101,7 @@ export default function Home() {
 
       <section className="section about" id="about" aria-labelledby="about-heading">
         <div className="about-photo torn-frame">
-          <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=900&q=88" alt="Zoë Toranzo with her dog" />
+          <img src="/zoe-and-dog.jpg" alt="Zoë Toranzo with her dog" />
           <Doodle className="photo-heart ph1">♡</Doodle>
           <Doodle className="photo-heart ph2">♡</Doodle>
         </div>
@@ -120,7 +120,7 @@ export default function Home() {
 
         <div className="about-side">
           <div className="coffin-photo">
-            <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=600&q=84" alt="Groomer giving affection to a fluffy dog" />
+            <img src="/zoe-and-dog.jpg" alt="Zoë Toranzo with her dog" />
             <Doodle className="coffin-heart">♡</Doodle>
           </div>
           <p className="scribble side-note">Clean<br />Pups<br />Happier<br />Pups<br />Kinder<br />World ♡</p>
