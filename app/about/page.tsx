@@ -12,7 +12,7 @@ export default function AboutPage() {
       </section>
 
       <section className="section about-page-grid">
-        <div className="torn-frame about-large-photo"><img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1200&q=88" alt="Zoë with a dog"/></div>
+        <div className="torn-frame about-large-photo"><img src="/zoe-and-dog.jpg" alt="Zoë Toranzo with her dog"/></div>
         <div className="about-story">
           <p className="eyebrow bone-label">🦴 &nbsp; The Zozo’s Story &nbsp; 🦴</p>
           <h2>A Calm Grooming Experience With Personality</h2>
@@ -23,6 +23,23 @@ export default function AboutPage() {
             <div><b>🐾</b><strong>All Breeds Welcome</strong><span>Every coat, size, and personality.</span></div>
             <div><b>☆</b><strong>Style With Personality</strong><span>Fresh looks without losing who they are.</span></div>
           </div>
+        </div>
+      </section>
+
+      <section className="section team-socials">
+        <div className="section-heading">
+          <p className="eyebrow bone-label">🦴 &nbsp; Follow the Team &nbsp; 🦴</p>
+          <h2>See More Fresh Grooms on Instagram</h2>
+        </div>
+        <div className="team-social-grid">
+          <a className="team-social-card" target="_blank" rel="noreferrer" href="https://www.instagram.com/zozo_loki/">
+            <i className="fa-brands fa-instagram" aria-hidden="true" />
+            <span><strong>Zoë / Zozo’s</strong><small>@zozo_loki</small></span>
+          </a>
+          <a className="team-social-card" target="_blank" rel="noreferrer" href="https://www.instagram.com/rachellehopkins1/">
+            <i className="fa-brands fa-instagram" aria-hidden="true" />
+            <span><strong>Rachelle Hopkins</strong><small>@rachellehopkins1</small></span>
+          </a>
         </div>
       </section>
       <SiteFooter />
