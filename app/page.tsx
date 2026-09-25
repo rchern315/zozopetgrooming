@@ -1,9 +1,12 @@
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
+
 const services = [
   { icon: "fa-bath", title: "Bath & Brush", text: "A deep clean, blow dry, and full brush out for a fresh, fluffy pup." },
-  { icon: "fa-scissors", title: "Full Groom", text: "Complete grooming including bath, haircut, ear cleaning, and nail trim. Customized to your pup!" },
-  { icon: "fa-hand-scissors", title: "Nail Trim", text: "Quick, safe, and stress-free nail trims to keep your pup comfy and healthy." },
-  { icon: "fa-brush", title: "Deshedding", text: "Reduce loose fur and keep your home (and pup) happier with our deshedding treatments." },
-  { icon: "fa-paw", title: "Puppy Intro Groom", text: "A gentle, positive first grooming experience to help your puppy build confidence." },
+  { icon: "fa-scissors", title: "Full Groom", text: "Complete grooming including bath, haircut, ear cleaning, and nail trim." },
+  { icon: "fa-hand-scissors", title: "Nail Trim", text: "Quick, safe, stress-free nail trims to keep your pup comfy and healthy." },
+  { icon: "fa-brush", title: "Deshedding", text: "Reduce loose fur and keep your home — and your pup — happier." },
+  { icon: "fa-paw", title: "Puppy Intro Groom", text: "A gentle, positive first grooming experience for a lifetime of good groom days." },
 ];
 
 const gallery = [
@@ -16,64 +19,43 @@ const gallery = [
   ["Old English Sheepdog", "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=700&q=88"],
 ];
 
-const reviews = [
-  { quote: "Zoë is amazing! My pup always looks and feels so good after her appointments. She’s patient, kind, and really knows dogs!", name: "Marisa R." },
-  { quote: "The best groomer in Reno! My dog can be anxious, but Zoë makes her feel so comfortable. The results are always perfect!", name: "Tyler M." },
-  { quote: "Obsessed with Zozo’s! The attention to detail and the cute styles are unmatched. My pup always leaves so happy!", name: "Jenna L." },
+const reviewPlaceholders = [
+  "Verified client review will be featured here.",
+  "More happy-pup feedback will be added here.",
+  "Client testimonials coming soon.",
 ];
-
-function Doodle({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  return <span className={"doodle " + className} aria-hidden="true">{children}</span>;
-}
 
 export default function Home() {
   return (
     <main className="home-page">
-      <header className="site-header">
-        <a className="brand" href="#top" aria-label="Zozo's Pet Grooming home">
-          <span className="brand-dog" aria-hidden="true">🐕</span>
-          <span className="brand-copy"><strong>ZOZO’S</strong><small>PET GROOMING</small></span>
-          <Doodle className="brand-star">✦</Doodle><Doodle className="brand-moon">☾</Doodle>
-        </a>
-        <nav aria-label="Primary navigation">
-          <a className="active" href="#top">Home</a>
-          <a href="/services">Services</a>
-          <a href="/gallery">Gallery</a>
-          <a href="/about">About</a>
-          <a href="/reviews">Reviews</a>
-          <a href="/contact">Contact</a>
-        </nav>
-        <a className="button button-primary header-cta" href="tel:+17754692228">
-          <i className="fa-solid fa-phone" aria-hidden="true" /> Call to Book
-        </a>
-      </header>
+      <SiteHeader active="home" />
 
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Professional pet grooming with personality</p>
           <h1>Fresh Cuts.<br />Clean Pups.<br /><span>Killer Style.</span></h1>
-          <p className="hero-text">At Zozo’s Pet Grooming, we believe grooming is more than just a bath — it’s self care, confidence, and a little bit of attitude. Every pup leaves looking fresh, feeling great, and ready to take on the world.</p>
+          <p className="hero-text">At Zozo’s Pet Grooming, grooming is more than just a bath — it’s self care, confidence, and a little bit of attitude. Every pup leaves looking fresh, feeling great, and ready to take on the world.</p>
           <div className="cta-row">
             <a className="button button-primary" href="tel:+17754692228"><i className="fa-solid fa-phone" aria-hidden="true" /> Call to Book</a>
             <a className="button button-secondary" href="/services">View Services <span aria-hidden="true">→</span></a>
           </div>
-          <Doodle className="hero-star star-a">✦</Doodle>
-          <Doodle className="hero-star star-b">★</Doodle>
-          <Doodle className="hero-bone bone-a">🦴</Doodle>
+          <span className="doodle hero-star star-a" aria-hidden="true">✦</span>
+          <span className="doodle hero-star star-b" aria-hidden="true">★</span>
+          <span className="doodle hero-bone bone-a" aria-hidden="true">🦴</span>
         </div>
 
         <div className="hero-visual">
-          <img className="hero-dog" src="https://images.unsplash.com/photo-1594149929911-78975a43d4f5?auto=format&fit=crop&w=1200&q=90" alt="Happy black and white dog" />
+          <img className="hero-dog" src="/hero-dog.jpg" alt="Happy black and white dog wearing a patterned bandana" />
           <div className="coffin-card" aria-hidden="true">
             <span className="tiny-bone">🦴</span>
             <strong>GOOD<br />PUPS<br />LOOK<br /><em>BETTER</em><br />HERE.</strong>
             <span className="moon">☾</span>
           </div>
-          <p className="scribble hero-note">Same<br />Pups.<br />More<br />Personality. ♡</p>
-          <Doodle className="green-heart gh1">♡</Doodle>
-          <Doodle className="green-heart gh2">♡</Doodle>
-          <Doodle className="hero-spark hs1">✦</Doodle>
-          <Doodle className="hero-spark hs2">★</Doodle>
+          <p className="scribble hero-note">Same Pups.<br />More Personality. ♡</p>
+          <span className="doodle green-heart gh1" aria-hidden="true">♡</span>
+          <span className="doodle green-heart gh2" aria-hidden="true">♡</span>
+          <span className="doodle hero-spark hs1" aria-hidden="true">✦</span>
+          <span className="doodle hero-spark hs2" aria-hidden="true">★</span>
         </div>
       </section>
 
@@ -85,7 +67,7 @@ export default function Home() {
             <p className="eyebrow bone-label">🦴 &nbsp; Our Services &nbsp; 🦴</p>
             <h2 id="services-heading">Grooming for Every Kind <span>of</span> Good Pup</h2>
           </div>
-          <p>From simple clean-ups to full transformations, we offer a range of grooming services tailored to keep your pup healthy, comfortable, and looking their best.</p>
+          <p>From simple clean-ups to full transformations, we offer grooming services tailored to keep your pup healthy, comfortable, and looking their best.</p>
         </div>
         <div className="service-grid">
           {services.map((service) => (
@@ -99,17 +81,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section about" id="about" aria-labelledby="about-heading">
+      <section className="section about" aria-labelledby="about-heading">
         <div className="about-photo torn-frame">
           <img src="/zoe-and-dog.jpg" alt="Zoë Toranzo with her dog" />
-          <Doodle className="photo-heart ph1">♡</Doodle>
-          <Doodle className="photo-heart ph2">♡</Doodle>
+          <span className="doodle photo-heart ph1" aria-hidden="true">♡</span>
+          <span className="doodle photo-heart ph2" aria-hidden="true">♡</span>
         </div>
 
         <div className="about-copy">
           <p className="eyebrow bone-label">🦴 &nbsp; Meet the Groomer &nbsp; 🦴</p>
           <h2 id="about-heading">Hi, I’m <span>Zoë Toranzo!</span></h2>
-          <p>I started Zozo’s Pet Grooming because I believe every pup deserves to feel good, look good, and be treated with kindness, patience, and a little bit of personality. Grooming isn’t just my job — it’s my passion, and I’m so lucky to get to do what I love.</p>
+          <p>I started Zozo’s Pet Grooming because I believe every pup deserves to feel good, look good, and be treated with kindness, patience, and a little bit of personality. Grooming isn’t just my job — it’s my passion.</p>
           <p>I specialize in creating a calm, positive experience for every pup, whether they’re here for a simple bath or a full style glow-up. All breeds, all personalities, always welcome!</p>
           <div className="about-points">
             <span><b>♡</b> Patient<br />&amp; Gentle</span>
@@ -120,11 +102,11 @@ export default function Home() {
 
         <div className="about-side">
           <div className="coffin-photo">
-            <img src="/zoe-and-dog.jpg" alt="Zoë Toranzo with her dog" />
-            <Doodle className="coffin-heart">♡</Doodle>
+            <img src="/zoe-and-dog.jpg" alt="" />
+            <span className="doodle coffin-heart" aria-hidden="true">♡</span>
           </div>
           <p className="scribble side-note">Clean<br />Pups<br />Happier<br />Pups<br />Kinder<br />World ♡</p>
-          <Doodle className="side-star">★</Doodle>
+          <span className="doodle side-star" aria-hidden="true">★</span>
         </div>
       </section>
 
@@ -134,7 +116,7 @@ export default function Home() {
             <p className="eyebrow bone-label">🦴 &nbsp; Gallery Highlights &nbsp; 🦴</p>
             <h2 id="gallery-heading">Real Pups. Real Results.</h2>
           </div>
-          <p>Take a look at some of our favorite groomed pups! Each pup is unique, and we love helping them look and feel their best.</p>
+          <p>Take a look at some of our favorite groomed pups. Each pup is unique, and we love helping them look and feel their best.</p>
           <a className="button button-secondary compact" href="/gallery">View Full Gallery →</a>
         </div>
         <div className="gallery-row">
@@ -153,14 +135,15 @@ export default function Home() {
             <p className="eyebrow bone-label">🦴 &nbsp; What Pet Parents Are Saying &nbsp; 🦴</p>
             <h2 id="reviews-heading">Happy Pups. Happier Humans.</h2>
           </div>
-          <div className="rating" aria-label="5.0 average rating"><span>★★★★★</span> <b>5.0</b> Average Rating</div>
+          <a className="button button-secondary compact" href="/reviews">Read Reviews →</a>
         </div>
         <div className="review-grid">
-          {reviews.map((review) => (
-            <blockquote className="review-card" key={review.name}>
-              <p>“{review.quote}”</p>
-              <footer><span aria-hidden="true">★★★★★</span> — {review.name}</footer>
-              <Doodle className="review-heart">♡</Doodle>
+          {reviewPlaceholders.map((quote, i) => (
+            <blockquote className="review-card" key={quote}>
+              <div className="stars" aria-hidden="true">★★★★★</div>
+              <p>{quote}</p>
+              <footer>— Zozo’s client feedback</footer>
+              <span className="doodle review-heart" aria-hidden="true">♡</span>
             </blockquote>
           ))}
         </div>
@@ -180,17 +163,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="footer" id="contact">
-        <a className="brand footer-brand" href="#top" aria-label="Back to top">
-          <span className="brand-dog" aria-hidden="true">🐕</span>
-          <span className="brand-copy"><strong>ZOZO’S</strong><small>PET GROOMING</small></span>
-        </a>
-        <a href="tel:+17754692228"><i className="fa-solid fa-phone" aria-hidden="true" /> <b>775-469-2228</b><br /><small>Call for appointments</small></a>
-        <a href="https://www.instagram.com/zozo_loki/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram" aria-hidden="true" /> <b>@ZOZO_LOKI</b><br /><small>Follow on Instagram</small></a>
-        <a href="https://www.facebook.com/profile.php?id=61551451768672" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook" aria-hidden="true" /> <b>Follow</b><br /><small>On Facebook</small></a>
-        <span className="footer-bone" aria-hidden="true">🦴</span>
-        <p className="scribble">Clean pups.<br />Happier lives. ♡</p>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
