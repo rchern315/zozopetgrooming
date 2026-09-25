@@ -287,3 +287,111 @@ h2{margin:0;font:900 31px/.95 "Playfair Display",Georgia,serif;letter-spacing:-1
   .footer{grid-template-columns:1fr;text-align:center;padding:20px 16px}.footer .brand{justify-content:center}
   .inner-hero{padding:38px 18px}.inner-hero:after{display:none}.inner-hero h1{font-size:44px}
 }
+
+
+/* Full-width desktop scaling: preserve mockup composition without a 1059px boxed canvas */
+@media (min-width:1060px){
+  .home-page{
+    width:100%;
+    max-width:none;
+    margin:0;
+  }
+  .site-header{
+    height:clamp(62px,5.85vw,102px);
+    padding-left:5.48vw;
+    padding-right:5.48vw;
+    grid-template-columns:21.72vw 1fr 13.69vw;
+    gap:1.7vw;
+  }
+  .brand-badge{width:3.59vw;height:4.25vw;font-size:1.42vw}
+  .brand-copy strong{font-size:2.83vw}
+  .brand-copy small{font-size:1.04vw}
+  .brand-moon{font-size:2.08vw}
+  .site-header nav{gap:2.27vw;font-size:1.13vw}
+  .site-header nav a{padding:2.17vw 0}
+  .header-cta{min-width:13.69vw;min-height:3.4vw;font-size:1.04vw}
+
+  .hero{
+    height:31.16vw;
+    grid-template-columns:38.24% 61.76%;
+  }
+  .hero-copy{padding:2.55vw 1.7vw 1.89vw 5.48vw}
+  .hero h1{font-size:5.10vw;letter-spacing:-.24vw}
+  .hero-text{width:32.58vw;font-size:.99vw}
+  .hero .button{min-width:16.81vw;min-height:3.4vw;font-size:1.04vw}
+  .hero-visual{height:31.16vw}
+  .coffin-card{
+    right:8.59vw;top:2.55vw;width:11.9vw;height:20.96vw;
+    padding:2.64vw .76vw 1.7vw;border-width:.28vw;
+  }
+  .coffin-card strong{font-size:1.7vw}
+  .hero-note{right:1.7vw;top:15.11vw;font-size:1.13vw}
+  .gh1{right:24.55vw;top:1.89vw;font-size:2.36vw}
+  .gh2{right:2.08vw;bottom:2.27vw;font-size:2.45vw}
+  .hs1{right:18.13vw;top:9.44vw}.hs2{right:5.10vw;top:8.12vw}
+  .star-a{right:.38vw;top:8.31vw}.star-b{right:2.83vw;top:17.56vw}.bone-a{right:-.57vw;top:13.03vw}
+
+  .rough-divider{height:1.89vw;margin-top:-.76vw}
+  .section{padding-left:5.48vw;padding-right:5.48vw}
+  .services-preview{height:23.8vw;padding-top:1.23vw}
+  h2{font-size:2.93vw}
+  .split-heading{gap:2.27vw}
+  .split-heading>p,.gallery-title-row>p{font-size:.94vw}
+  .eyebrow{font-size:.85vw}
+  .service-grid{gap:.66vw}
+  .service-card{min-height:14.83vw;padding:1.23vw .85vw .76vw;border-radius:1.23vw}
+  .service-card i{font-size:2.55vw;margin-bottom:.85vw}
+  .service-card h3{font-size:1.04vw}
+  .service-card p{font-size:.88vw}
+  .mini-bone{font-size:1.04vw}
+
+  .groomer-showcase{
+    height:23.42vw;
+    grid-template-columns:29.27vw 36.83vw 14.64vw 8.50vw;
+    gap:1.13vw;
+    padding-top:1.13vw;padding-bottom:1.13vw;
+  }
+  .groomer-photo-primary img{height:20.77vw}
+  .groomer-copy h2{font-size:2.93vw}
+  .groomer-copy>p:not(.eyebrow){font-size:.925vw}
+  .groomer-values{gap:.76vw;margin-top:.76vw}
+  .groomer-values b{font-size:2.17vw}
+  .groomer-values small{font-size:.80vw}
+  .coffin-photo{width:12.75vw}
+  .coffin-photo img{height:19.64vw}
+  .groomer-note-wrap{height:20.30vw}
+  .groomer-note{font-size:.94vw}
+
+  .gallery-preview{height:17.38vw;padding-top:.94vw;padding-bottom:.94vw}
+  .gallery-title-row{gap:1.70vw}
+  .compact{min-height:2.93vw;font-size:.85vw}
+  .gallery-row{gap:.66vw}
+  .gallery-card{height:10.48vw;border-radius:.94vw}
+
+  .reviews-preview{height:14.45vw;padding-top:.76vw;padding-bottom:.85vw}
+  .reviews-title-row h2{font-size:2.64vw}
+  .review-grid{gap:.94vw}
+  .review-card{min-height:7.84vw;padding:.94vw 1.32vw}
+  .stars{font-size:1.04vw}
+  .review-card p{font-size:.82vw}
+  .review-card footer{font-size:.80vw}
+
+  .social-strip{height:9.54vw}
+  .social-photos img{height:8.69vw}
+  .social-center p{font-size:.76vw}
+  .social-center a{font-size:2.27vw}
+  .social-center small{font-size:.66vw}
+
+  .footer{
+    min-height:8.31vw;
+    padding:1.04vw 5.48vw 1.51vw;
+    gap:.94vw;
+    font-size:.85vw;
+  }
+  .footer .brand-badge{width:3.3vw;height:3.97vw}
+  .footer .brand-copy strong{font-size:2.36vw}
+  .footer .brand-copy small{font-size:.85vw}
+  .footer i{font-size:1.7vw}
+  .footer small{font-size:.66vw}
+  .footer-slogan{font-size:.94vw!important}
+}
