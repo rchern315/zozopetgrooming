@@ -81,32 +81,37 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section about" aria-labelledby="about-heading">
-        <div className="about-photo torn-frame">
+      <section className="section groomer-showcase" aria-labelledby="about-heading">
+        <div className="groomer-photo-primary torn-frame">
           <img src="/zoe-and-dog.jpg" alt="Zoë Toranzo with her dog" />
           <span className="doodle photo-heart ph1" aria-hidden="true">♡</span>
           <span className="doodle photo-heart ph2" aria-hidden="true">♡</span>
+          <span className="doodle photo-spark" aria-hidden="true">✦</span>
         </div>
 
-        <div className="about-copy">
+        <div className="groomer-copy">
           <p className="eyebrow bone-label">🦴 &nbsp; Meet the Groomer &nbsp; 🦴</p>
           <h2 id="about-heading">Hi, I’m <span>Zoë Toranzo!</span></h2>
-          <p>I started Zozo’s Pet Grooming because I believe every pup deserves to feel good, look good, and be treated with kindness, patience, and a little bit of personality. Grooming isn’t just my job — it’s my passion.</p>
+          <p>I started Zozo’s Pet Grooming because I believe every pup deserves to feel good, look good, and be treated with kindness, patience, and a little bit of personality. Grooming isn’t just my job — it’s my passion, and I’m so lucky to get to do what I love.</p>
           <p>I specialize in creating a calm, positive experience for every pup, whether they’re here for a simple bath or a full style glow-up. All breeds, all personalities, always welcome!</p>
-          <div className="about-points">
-            <span><b>♡</b> Patient<br />&amp; Gentle</span>
-            <span><b>🐾</b> All Breeds<br />Welcome</span>
-            <span><b>☆</b> Style<br />With Personality</span>
+
+          <div className="groomer-values">
+            <span><b>♡</b><small>Patient<br />&amp; Gentle</small></span>
+            <span><b>🐾</b><small>All Breeds<br />Welcome</small></span>
+            <span><b>☆</b><small>Style<br />With Personality</small></span>
           </div>
         </div>
 
-        <div className="about-side">
-          <div className="coffin-photo">
+        <div className="groomer-secondary">
+          <div className="coffin-photo groomer-coffin">
             <img src="/zoe-and-dog.jpg" alt="" />
             <span className="doodle coffin-heart" aria-hidden="true">♡</span>
           </div>
-          <p className="scribble side-note">Clean<br />Pups<br />Happier<br />Pups<br />Kinder<br />World ♡</p>
-          <span className="doodle side-star" aria-hidden="true">★</span>
+        </div>
+
+        <div className="groomer-note-wrap" aria-hidden="true">
+          <span className="doodle note-star">★</span>
+          <p className="scribble groomer-note">CLEAN<br />PUPS<br />HAPPIER<br />PUPS<br />KINDER<br />WORLD ♡</p>
         </div>
       </section>
 
