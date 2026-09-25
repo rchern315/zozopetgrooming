@@ -45,7 +45,7 @@ export default function Home() {
         </div>
 
         <div className="hero-visual">
-          <img className="hero-dog" src="https://images.unsplash.com/photo-1594149929911-78975a43d4f5?auto=format&fit=crop&w=1600&q=92" alt="Happy black and white dog" />
+          <img className="hero-dog" src="/hero-dog.jpg" alt="Happy black and white dog wearing a patterned bandana" />
           <div className="coffin-card" aria-hidden="true">
             <span className="tiny-bone">🦴</span>
             <strong>GOOD<br />PUPS<br />LOOK<br /><em>BETTER</em><br />HERE.</strong>
@@ -104,7 +104,7 @@ export default function Home() {
 
         <div className="groomer-secondary">
           <div className="coffin-photo groomer-coffin">
-            <img src="/zoe-and-dog.jpg" alt="" />
+            <img src="/about-right.jpg" alt="" />
             <span className="doodle coffin-heart" aria-hidden="true">♡</span>
           </div>
         </div>
@@ -169,6 +169,6 @@ export default function Home() {
       </section>
 
       <SiteFooter />
-    </div></div></main>
+    </main>
   );
 }
