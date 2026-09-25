@@ -87,7 +87,7 @@ export default function Home() {
 
       <section className="section about" id="about" aria-labelledby="about-heading">
         <div className="about-photo tilted-frame">
-          <img src="/zoe-and-dog.jpg" alt="Zoë Toranzo with her dog" />
+          <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=900&q=85" alt="Zoë Toranzo with her dog" />
         </div>
         <div className="about-copy">
           <p className="eyebrow">— Meet the Groomer —</p>
